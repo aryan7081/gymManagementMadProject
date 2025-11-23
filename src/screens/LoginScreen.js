@@ -77,7 +77,11 @@ const LoginScreen = () => {
           </TouchableOpacity>
         </View>
 
-        <TouchableOpacity style={styles.loginButton} onPress={handleLogin}>
+        <TouchableOpacity 
+          style={styles.loginButton} 
+          onPress={handleLogin}
+          activeOpacity={0.8}
+        >
           <Text style={styles.loginButtonText}>Sign In</Text>
         </TouchableOpacity>
 
@@ -131,6 +135,14 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     width: '100%',
     height: 50,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 1,
+    },
+    shadowOpacity: 0.05,
+    shadowRadius: 2,
+    elevation: 1,
   },
   inputIcon: {
     marginRight: 12,
