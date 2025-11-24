@@ -34,6 +34,7 @@ const MembersScreen = () => {
         <TouchableOpacity
           style={styles.addButton}
           onPress={() => navigation.navigate('AddMember')}
+          activeOpacity={0.8}
         >
           <Ionicons name="add" size={24} color="#FFFFFF" />
         </TouchableOpacity>
@@ -64,6 +65,7 @@ const MembersScreen = () => {
                 <TouchableOpacity
                   style={styles.deleteButton}
                   onPress={() => deleteMember(member.id, member.name)}
+                  activeOpacity={0.7}
                 >
                   <Ionicons name="trash-outline" size={20} color="#FF3B30" />
                 </TouchableOpacity>
@@ -120,6 +122,14 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     alignItems: 'center',
     justifyContent: 'center',
+    shadowColor: '#007AFF',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.3,
+    shadowRadius: 4,
+    elevation: 4,
   },
   scrollView: {
     flex: 1,
