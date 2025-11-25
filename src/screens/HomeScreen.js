@@ -23,7 +23,11 @@ const HomeScreen = () => {
           <Text style={styles.title}>Gym Dashboard</Text>
           <Text style={styles.subtitle}>Welcome, {state.user?.name || 'Admin'}</Text>
         </View>
-        <TouchableOpacity onPress={logout} style={styles.logoutButton}>
+        <TouchableOpacity 
+          onPress={logout} 
+          style={styles.logoutButton}
+          activeOpacity={0.7}
+        >
           <Ionicons name="log-out-outline" size={24} color="#FFFFFF" />
         </TouchableOpacity>
       </View>
@@ -41,7 +45,10 @@ const HomeScreen = () => {
       <Card style={styles.recentCard}>
         <View style={styles.sectionHeader}>
           <Text style={styles.sectionTitle}>Recent Members</Text>
-          <TouchableOpacity onPress={() => navigation.navigate('Members')}>
+          <TouchableOpacity 
+            onPress={() => navigation.navigate('Members')}
+            activeOpacity={0.7}
+          >
             <Text style={styles.seeAll}>See All</Text>
           </TouchableOpacity>
         </View>
@@ -61,7 +68,10 @@ const HomeScreen = () => {
       <Card style={styles.recentCard}>
         <View style={styles.sectionHeader}>
           <Text style={styles.sectionTitle}>Upcoming Workouts</Text>
-          <TouchableOpacity onPress={() => navigation.navigate('Workouts')}>
+          <TouchableOpacity 
+            onPress={() => navigation.navigate('Workouts')}
+            activeOpacity={0.7}
+          >
             <Text style={styles.seeAll}>See All</Text>
           </TouchableOpacity>
         </View>
