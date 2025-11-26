@@ -136,6 +136,7 @@ const styles = StyleSheet.create({
   },
   memberCard: {
     marginVertical: 8,
+    marginHorizontal: 0,
   },
   memberHeader: {
     flexDirection: 'row',
@@ -179,7 +180,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginVertical: 4,
+    marginVertical: 6,
+    paddingVertical: 2,
   },
   detailLabel: {
     fontSize: 14,
