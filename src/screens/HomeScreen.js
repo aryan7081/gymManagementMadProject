@@ -129,12 +129,14 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     padding: 16,
     justifyContent: 'space-between',
+    gap: 8,
   },
   statCard: {
     flex: 1,
     marginVertical: 4,
     alignItems: 'center',
     paddingVertical: 20,
+    minWidth: '45%',
   },
   statValue: {
     fontSize: 32,
