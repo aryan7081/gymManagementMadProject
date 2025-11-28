@@ -4,7 +4,11 @@ import { Ionicons } from '@expo/vector-icons';
 
 const Button = ({ title, onPress, style, textStyle, icon, iconColor = '#FFFFFF' }) => {
   return (
-    <TouchableOpacity style={[styles.button, style]} onPress={onPress}>
+    <TouchableOpacity 
+      style={[styles.button, style]} 
+      onPress={onPress}
+      activeOpacity={0.8}
+    >
       {icon && <Ionicons name={icon} size={20} color={iconColor} style={styles.icon} />}
       <Text style={[styles.buttonText, textStyle]}>{title}</Text>
     </TouchableOpacity>
@@ -21,6 +25,14 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     marginVertical: 8,
     flexDirection: 'row',
+    shadowColor: '#007AFF',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3,
+    elevation: 3,
   },
   buttonText: {
     color: '#FFFFFF',
