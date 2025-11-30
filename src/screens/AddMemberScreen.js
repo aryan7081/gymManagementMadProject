@@ -122,13 +122,16 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
     color: '#333',
-    marginBottom: 20,
+    marginBottom: 24,
     textAlign: 'center',
+    letterSpacing: 0.5,
   },
   cancelButton: {
     backgroundColor: '#F5F5F5',
     borderWidth: 1,
     borderColor: '#DDD',
+    shadowOpacity: 0,
+    elevation: 0,
   },
   cancelButtonText: {
     color: '#333',
