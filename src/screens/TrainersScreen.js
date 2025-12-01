@@ -51,6 +51,7 @@ const TrainersScreen = () => {
                 <TouchableOpacity
                   style={styles.deleteButton}
                   onPress={() => deleteTrainer(trainer.id, trainer.name)}
+                  activeOpacity={0.7}
                 >
                   <Ionicons name="trash-outline" size={20} color="#FF3B30" />
                 </TouchableOpacity>
@@ -98,6 +99,7 @@ const styles = StyleSheet.create({
   },
   trainerCard: {
     marginVertical: 8,
+    marginHorizontal: 0,
   },
   trainerHeader: {
     flexDirection: 'row',
