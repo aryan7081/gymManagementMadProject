@@ -68,6 +68,7 @@ const WorkoutsScreen = () => {
                 <TouchableOpacity
                   style={styles.deleteButton}
                   onPress={() => deleteWorkout(workout.id, getMemberName(workout.memberId))}
+                  activeOpacity={0.7}
                 >
                   <Ionicons name="trash-outline" size={20} color="#FF3B30" />
                 </TouchableOpacity>
@@ -121,6 +122,7 @@ const styles = StyleSheet.create({
   },
   workoutCard: {
     marginVertical: 8,
+    marginHorizontal: 0,
   },
   workoutHeader: {
     flexDirection: 'row',
@@ -209,6 +211,7 @@ const styles = StyleSheet.create({
   emptySubtext: {
     fontSize: 14,
     color: '#BBB',
+    marginTop: 4,
   },
 });
 
