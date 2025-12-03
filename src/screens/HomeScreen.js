@@ -227,7 +227,8 @@ const styles = StyleSheet.create({
     color: '#999',
     fontStyle: 'italic',
     textAlign: 'center',
-    paddingVertical: 12,
+    paddingVertical: 16,
+    paddingHorizontal: 20,
   },
 });
 

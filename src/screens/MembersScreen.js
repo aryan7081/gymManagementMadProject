@@ -216,6 +216,7 @@ const styles = StyleSheet.create({
   emptySubtext: {
     fontSize: 14,
     color: '#BBB',
+    marginTop: 4,
   },
 });
 
