@@ -39,3 +39,7 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# Scripts (local development only)
+create-backdated-commits.sh
+backdate-commits.sh
